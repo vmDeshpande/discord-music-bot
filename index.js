@@ -55,6 +55,11 @@ if (LOAD_SLASH) {
 else {
     client.on("ready", () => {
         console.log(`Logged in as ${client.user.tag}`)
+        bot.user.setActivity({
+            type: "PLAYING",
+            name: `commands / | Feathered Beast Server 2.0`
+    
+        })
     })
     client.on("interactionCreate", (interaction) => {
         async function handleCommand() {
