@@ -55,7 +55,7 @@ if (LOAD_SLASH) {
 else {
     client.on("ready", () => {
         console.log(`Logged in as ${client.user.tag}`)
-        bot.user.setActivity({
+        client.user.setActivity({
             type: "PLAYING",
             name: `commands / | Feathered Beast Server 2.0`
     
